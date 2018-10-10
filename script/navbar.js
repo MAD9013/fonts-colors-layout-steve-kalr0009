@@ -1,7 +1,6 @@
 window.onscroll = function() {navScroll()};
 var navbar = document.getElementsByClassName("mainnav")[0];
 
-
 var offset = navbar.offsetTop;
 
 function navScroll() {

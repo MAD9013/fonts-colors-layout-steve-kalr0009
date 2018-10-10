@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 html{
-    font-size: 16px;
+    font-size: 1em;
     line-height: 1.6;
     /*font-family: font stack required for body text */
     font-family: Roboto, helvetica, sans-serif;
@@ -42,12 +42,8 @@ p{
 .mainnav{
     display: flex;
     flex-direction: row;
-/*    border: 1px solid black;*/
     justify-content: space-around;
-/*    background-color: hsl(200,35%,60%);*/
     background-image: linear-gradient(hsl(200,35%,60%),hsl(200,35%,0%));
-    
-    
 }
 .mainnav a{
     text-decoration: none;

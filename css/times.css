@@ -120,6 +120,7 @@ h1.story-title{
     border-bottom: 1px dotted black;
     width: 54vw;
     min-width: 425px;
+    max-width: 1475px;
 
 }
 p.byline span.author{

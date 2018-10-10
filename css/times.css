@@ -10,7 +10,7 @@ html{
     line-height: 1.6;
     /*font-family: font stack required for body text */
     font-family: Roboto, helvetica, sans-serif;
-    background-color: hsl(200,0%,75%);
+    background-color: hsl(200,0%,85%);
 }
 h1, h2, h3, h4{
     /*font-family: font stack required for headings */
@@ -59,11 +59,11 @@ p{
     font-weight: bold;
     color: hsl(200,35%,80%);
     overflow-y: auto;
-    height: 0px;
+ 
 }
 
 /*Scrolling Navigation*/
-.sticky {
+.navScroll {
     position: fixed;
     top: 0;
     max-width: 1500px;

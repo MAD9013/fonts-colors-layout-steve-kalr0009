@@ -11,3 +11,10 @@ function navScroll() {
     navbar.classList.remove("navScroll");
   }
 } 
+
+/*
+CITATION - JS sticky navigation bar code originally found here:
+https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
+
+I have modified and re-written the code for my purposes.
+*/

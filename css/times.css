@@ -9,6 +9,8 @@ html{
     font-size: 16px;
     line-height: 1.6;
     /*font-family: font stack required for body text */
+    font-family: Roboto, helvetica, sans-serif;
+    background-color: hsl(200,0%,75%);
 }
 h1, h2, h3, h4{
     /*font-family: font stack required for headings */
@@ -17,31 +19,53 @@ p{
     
 }
 .container{
-    
+    margin: auto;
+    max-width: 1500px;
+    background-color: hsl(200,0%,100%);
 }
 .subnav{
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 .subnav a{
-    
+    padding: 0rem 1rem;
+    text-decoration: none;
 }
 .mainnav{
+    display: flex;
+    flex-direction: row;
+/*    border: 1px solid black;*/
+    justify-content: space-around;
+    background-color: hsl(200,35%,60%);
+    
     
 }
 .mainnav a{
-    
+    text-decoration: none;
+    color: hsl(200,0%,100%);
 }
+
+.mainnav a:hover{
+    font-weight: bold;
+    background-color: hsla(200,0%,75%,75%);
+}
+
 .masthead{
+
     
 }
 .times-logo{
+    display: block;
+    margin: auto;
     
 }
 .masthead h1{
+    text-align: center;
     
 }
 .content{
-    
+    padding: 1rem;
 }
 .content .story{
     
@@ -50,25 +74,32 @@ p{
     
 }
 h1.story-title{
-    
+    padding: 1rem 0.5rem 0rem 0.5rem;
 }
 .story img{
-    
+    float: right;
+    padding: 0 0 0 1rem;
 }
 .story p{
-    
+    padding: 0.5rem;
 }
 .story blockquote{
+    padding-left: 0.5rem;
     quotes: "\201E" "\201D";
 }
 .story blockquote::before{
     content: open-quote;
+    
 }
 .story blockquote::after{
     content: close-quote;
 }
 .story p.byline{
-    
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    border-bottom: 1px dotted black;
+    width: 54vw;
+    min-width: 425px;
+
 }
 p.byline span.author{
     
@@ -77,8 +108,8 @@ p.byline span.pub{
     
 }
 .foot{
-    
+
 }
 .foot p{
-    
+        text-align: center;
 }

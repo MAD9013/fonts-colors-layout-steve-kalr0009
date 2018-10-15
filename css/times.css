@@ -39,6 +39,7 @@ p{
 }
 .subnav a:hover{
     font-weight: bold;
+    color: hsl(220,55%,90%);
 }
 .mainnav{
     display: flex;
@@ -54,9 +55,8 @@ p{
 
 .mainnav a:hover{
     font-weight: bold;
-    color: hsl(200,35%,80%);
+    color: hsl(220,55%,90%);
     overflow-y: auto;
- 
 }
 
 /*Scrolling Navigation*/
@@ -84,7 +84,6 @@ p{
 }
 .masthead h1{
     text-align: center;
-    
 }
 .content{
     padding: 1rem;
@@ -96,10 +95,10 @@ h1.story-title{
     padding: 1rem 0.5rem 0rem 0.5rem;
 }
 .lead-story.story h1{
-
+    text-shadow: -2px 1px hsl(220,55%,90%);
 } 
 .lead-story.story .byline{
-    text-shadow: 1px 1px hsl(200,35%,80%);
+    text-shadow: 1px 1px hsl(220,55%,90%);
 } 
 .lead-story.story p{
     font-size: 1.05em;
@@ -133,8 +132,6 @@ h1.story-title{
 .story p.byline{
     padding: 0 0.5rem 0.5rem 0.5rem;
     border-bottom: 1px dotted black;
-    width: 54vw;
-    min-width: 425px;
     max-width: 1475px;
     font-variant: small-caps;
 
@@ -149,6 +146,36 @@ p.byline span.pub{
 
 }
 .foot p{
-        text-align: center;
-        font-size: 0.75rem;
+    text-align: center;
+    font-size: 0.75em;
+}
+
+@media only screen and (max-width:600px) {
+    .lead-story.story p{
+        font-size: 1.25em;
+    }
+    .story.lead-story blockquote{
+        font-size: 1.25em;
+    }
+    p{
+        font-size: 1.15em;
+    }
+    .story blockquote{
+        font-size: 1.15em;
+    }
+    .story img{
+        max-height: 50vh;
+        max-width: 50vw;
+    }
+    .story p.byline{
+        min-width: 350px;
+        width: 80vw;
+    }
+}
+
+@media only screen and (min-width:601px) {
+    .story p.byline{
+        min-width: 500px;
+        width: 54vw;
+    }
 }
